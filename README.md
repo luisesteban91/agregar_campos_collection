@@ -1,3 +1,5 @@
+    use Illuminate\Support\Arr;
+    
     public function index(Request $request){
 #REALIZAR LA PETICION TIPO GET A SERVICIOS-ORIGINACION PARA OBTENER LA INFORAMCION DE ESTAS SOLICITUDES PASANDOLES EL ARRAY DE SOLICITUDES
         $solicitudes = $this->guzzle->findSolicitudes($solicitudes_comite);
